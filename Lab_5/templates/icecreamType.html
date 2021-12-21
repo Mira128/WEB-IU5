@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<ul>
+    <h3>Виды мороженного</h3>
+    {% for icecream in data.icecreams%}
+       <li><a href="{% url 'icecream_url' pk=icecream.pk %}">{{ icecream.title }}</a> </li>
+    {% empty %}
+       <li>Список пуст</li>
+    {% endfor %}
+</ul>
+{% endblock %}

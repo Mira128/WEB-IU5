@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Дирижеры оркестров {% endblock %}
+
+{% block content %}
+    <h3>Дирижеры оркестров</h3>
+    {% for bat in data %}
+      <div> Имя дирижера: <b style="color:blue">{{bat.nameBat}}</b></div>
+        <div>Фамилия дирижера: <b style="color:blue">{{ bat.secondName }}</b></div>
+        <div>Возраст дирижера: <b style="color:blue">{{ bat.age }}</b></div>
+        <div>Стаж дирижера: <b style="color:blue">{{ bat.experience }}</b></div>
+        <div>Оркестр: <b style="color:rebeccapurple">{{ bat.idOrch.nameOrch }}</b></div>
+        <div>Количество участников оркестра: <b style="color:rebeccapurple">{{ bat.idOrch.membersNum }}</b></div>
+        <div>Дата образования оркестра: <b style="color:rebeccapurple">{{ bat.idOrch.dateCreation }}</b></div>
+                <p></p>
+    {% endfor %}
+{% endblock %}

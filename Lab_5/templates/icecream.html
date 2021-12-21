@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Вид: {% endblock %}
+
+{% block content %}
+<ul>
+    <div style="text-align: center">
+    {% if pk == 1 %}
+         <img src="{% static 'images/plombir.jpg' %}" style="width:300px">
+    {% elif pk == 2 %}
+         <img src="{% static 'images/chockolate.jpg' %}" style="width:300px">
+    {% elif pk == 3 %}
+         <img src="{% static 'images/strawberry.jpg' %}" style="width:300px">
+    {% elif pk == 4 %}
+         <img src="{% static 'images/fistaska.jpg' %}" style="width:300px">
+    {% else %}
+         <img src="{% static 'images/cream-brule.jpeg' %}" style="width:300px">
+    {% endif %}
+    </div>
+    <table border="1" width="100%" cellpadding="5">
+        <tr>
+            <th> Название</th>
+            <th> Ингридиенты </th>
+            <th> Стандарт </th>
+            <th> Цена (руб)</th>
+        </tr>
+        <tr>
+
+                <td>{{ title }}</td>
+                <td>{{ ingridients }}</td>
+                <td> {{ standart }}</td>
+                <td>{{ price }}</td>
+
+        </tr>
+    </table>
+    <div style="text-align: center">
+        <li><a href="{% url 'home_url' %}">{{ 'Home' }}</a> </li>
+    </div>
+</ul>
+{% endblock %}
