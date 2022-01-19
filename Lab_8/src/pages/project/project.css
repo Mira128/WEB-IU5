@@ -1,0 +1,77 @@
+.project {
+    color: white;
+  }
+
+  .project-header {
+    background-color: #282c34;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+
+    text-align: center;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #335070;
+
+    font-size: 14px;
+    min-height: 60vh;
+    min-width: 40vh;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid white;
+  }
+
+  @media screen and (max-device-width: 600px) {
+    .user-info {
+    width: 400px;
+    }
+  }
+
+  li {
+    text-align: center;
+    background-color: #dbf2f8;
+    font-size: calc(10px + 1vmin);
+    color: white;
+    margin: 17px;
+    width: 100px;
+    height: 42px;
+    border: 1px solid;
+    border-radius: 30px;
+  }
+
+  Link {
+    color: white;
+  }
+
+  .text-info {
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  .icon-info {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pict-box{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
+  button {
+    width: 100px;
+    height: 42px;
+    color: #031d3a;
+    font-size: 18px;
+    margin: 20px;
+    margin-left: 0px;
+  }

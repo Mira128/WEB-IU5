@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href = "styles.css">
+    <script type="text/javascript" src="https://openweathermap.org/current"></script>
+    <title>Lab7</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="weather_icon_container"><img src="images/wind.svg" class="weather_icon" /></div>
+	<div class="text_1">Погода</div>
+	
+	<input id="input_city" type="text" placeholder="Название города..." />
+	<button id="search_button"><img src="images/search.svg" class="button_icon" /></button>
+	
+</div>
+
+<p><div class="backspace">
+	<div class="content">
+		<div class="city__temp">
+			<div class="weather__title" id="city"></div>
+			<div class="weather__temperature" id="date"></div>
+			<div class="weather__title" id="temperature"></div>
+		</div>
+		<div class="description">
+			<div class="weather__temperature" id="weather_pic"></div>
+			<div class="weather__temperature" id="condition"></div>
+		</div>
+		<div class="weather">
+			<div class="weather__temperature" id="pressure"></div>
+			<div class="weather__temperature" id="humidity"></div>
+			<div class="weather__temperature" id="wind"></div>
+		</div>
+
+		
+		<p><div class="forecast">
+			<span><div class="block_class" id="fc__tomorrow"></div></span>
+			<div class="forecast__content">
+				<div class="fc__description">
+					<div class="weather__temperature" id="fc1__date"></div>
+					<div class="weather__temperature" id="fc1__weather_pic"></div>
+					<div class="weather__temperature" id="fc1__temperature"></div>
+					<div class="weather__temperature" id="fc1__condition"></div>
+					<div class="fc__weather">
+						<div class="weather__temperature" id="fc1__pressure"></div>
+						<div class="weather__temperature" id="fc1__humidity"></div>
+						<div class="weather__temperature" id="fc1__wind"></div>
+					</div>
+				</div>
+
+				<div class="fc__description">
+					<div class="weather__temperature" id="fc2__date"></div>
+					<div class="weather__temperature" id="fc2__weather_pic"></div>
+					<div class="weather__temperature" id="fc2__temperature"></div>
+					<div class="weather__temperature" id="fc2__condition"></div>
+					<div class="fc__weather">
+						<div class="weather__temperature" id="fc2__pressure"></div>
+						<div class="weather__temperature" id="fc2__humidity"></div>
+						<div class="weather__temperature" id="fc2__wind"></div>
+					</div>
+				</div>
+			</div>
+		</div></p>
+	</div>
+</div></p>
+
+<script src="script.js"></script>
+</body>
+
+</html>
